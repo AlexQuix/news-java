@@ -4,17 +4,26 @@
  */
 package SysNews.UI;
 
+import Sys.Swing.ScrollBar.ScrollBarCustom;
 import SysNews.BL.NewsBL;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Frame;
+import java.awt.Toolkit;
 
 
 public class News extends javax.swing.JFrame {
     public News(SysNews.EL.News news) {
         initComponents();
-        setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
         setBackground(new Color(0,0,0,0));
         newsInfo1.FillContent(news);
         opts.frame = this;
+        
+        
+        ScrollBarCustom sb = new ScrollBarCustom();
+        sb.setForeground(new Color(50, 50, 50, 100));
+        jScrollPane1.setVerticalScrollBar(sb);
     }
    
     @SuppressWarnings("unchecked")
@@ -23,36 +32,40 @@ public class News extends javax.swing.JFrame {
 
         roundedPanel1 = new SysNews.UI.Swings.RoundedPanel();
         nav1 = new SysNews.UI.Components.Nav();
-        newsInfo1 = new SysNews.UI.Components.NewsInfo();
         opts = new SysNews.UI.Components.OptionForm();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        newsInfo1 = new SysNews.UI.Components.NewsInfo();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setUndecorated(true);
-        setResizable(false);
 
         roundedPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        opts.setPreferredSize(new java.awt.Dimension(488, 50));
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setViewportView(newsInfo1);
 
         javax.swing.GroupLayout roundedPanel1Layout = new javax.swing.GroupLayout(roundedPanel1);
         roundedPanel1.setLayout(roundedPanel1Layout);
         roundedPanel1Layout.setHorizontalGroup(
             roundedPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(nav1, javax.swing.GroupLayout.DEFAULT_SIZE, 903, Short.MAX_VALUE)
-            .addGroup(roundedPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(newsInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(nav1, javax.swing.GroupLayout.DEFAULT_SIZE, 1110, Short.MAX_VALUE)
             .addComponent(opts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 893, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         roundedPanel1Layout.setVerticalGroup(
             roundedPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel1Layout.createSequentialGroup()
                 .addComponent(opts, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
+                .addGap(10, 10, 10)
                 .addComponent(nav1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(newsInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -63,9 +76,7 @@ public class News extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(roundedPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(roundedPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -84,6 +95,7 @@ public class News extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
     private SysNews.UI.Components.Nav nav1;
     private SysNews.UI.Components.NewsInfo newsInfo1;
     private SysNews.UI.Components.OptionForm opts;

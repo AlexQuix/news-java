@@ -228,8 +228,8 @@ public class Home extends javax.swing.JFrame {
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\alexq\\Documents\\NetBeansProjects\\News\\src\\main\\java\\SysNews\\UI\\Icons\\pagina-de-inicio.png")); // NOI18N
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 3, 40, 40));
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\alexq\\Documents\\NetBeansProjects\\News\\src\\main\\java\\SysNews\\UI\\Icons\\menu.png")); // NOI18N
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 40));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -299,7 +299,6 @@ public class Home extends javax.swing.JFrame {
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\alexq\\Documents\\NetBeansProjects\\News\\src\\main\\java\\SysNews\\UI\\Icons\\pagina-de-inicio.png")); // NOI18N
         jPanel14.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 3, 40, 40));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N

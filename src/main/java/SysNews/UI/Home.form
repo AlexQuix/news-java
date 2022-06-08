@@ -195,12 +195,12 @@
                       <Font name="Segoe UI" size="36" style="1"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\alexq\Documents\NetBeansProjects\News\src\main\java\SysNews\UI\Icons\pagina-de-inicio.png"/>
+                      <Image iconType="2" name="C:\Users\alexq\Documents\NetBeansProjects\News\src\main\java\SysNews\UI\Icons\menu.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="15" y="3" width="40" height="40"/>
+                      <AbsoluteConstraints x="20" y="0" width="40" height="40"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -392,9 +392,6 @@
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="36" style="1"/>
-                        </Property>
-                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\alexq\Documents\NetBeansProjects\News\src\main\java\SysNews\UI\Icons\pagina-de-inicio.png"/>
                         </Property>
                       </Properties>
                       <Constraints>

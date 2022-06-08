@@ -5,6 +5,8 @@
 package SysNews.UI.Components;
 
 import SysNews.EL.News;
+import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.awt.font.TextAttribute;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,16 +23,13 @@ public class NewsInfo extends javax.swing.JPanel {
      */
     public NewsInfo() {
         initComponents();
-        Map<TextAttribute, Object> attributes = new HashMap<TextAttribute, Object>();
-        attributes.put(TextAttribute.TRACKING, 0.1);
-        txtInfo.setFont(txtInfo.getFont().deriveFont(attributes));
+        //setLayout(null);
     }
-    
     public void FillContent(News data){
         txtTitle.setText(data.title);
         txtAuthor.setText("By " + data.author);
         txtPublAt.setText(data.publishedAt);
-        txtInfo.setText(data.description);
+        //txtInfo.setText(data.description + "\n\n" + data.content);
         imgPort.setIcon(new javax.swing.JLabel() {
             public javax.swing.Icon getIcon() {
                 try {
@@ -53,47 +52,19 @@ public class NewsInfo extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtInfo = new javax.swing.JTextArea();
-        txtPublAt = new javax.swing.JLabel();
-        txtAuthor = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtTitle = new javax.swing.JTextArea();
         imgPort = new SysNews.UI.Swings.ImageRoundel();
+        txtTitle = new javax.swing.JTextArea();
+        jPanel1 = new javax.swing.JPanel();
+        txtAuthor = new javax.swing.JLabel();
+        txtPublAt = new javax.swing.JLabel();
+        txtInfo = new javax.swing.JTextArea();
 
         setBackground(new java.awt.Color(255, 255, 255));
-
-        txtInfo.setBackground(new java.awt.Color(255, 255, 255));
-        txtInfo.setColumns(20);
-        txtInfo.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
-        txtInfo.setForeground(new java.awt.Color(50, 50, 50));
-        txtInfo.setLineWrap(true);
-        txtInfo.setRows(5);
-        txtInfo.setText("La Unión Soviética (en ruso, Советский Союз, Sovietski Soyuz),10​11​ oficialmente Unión de Repúblicas Socialistas Soviéticas (URSS; en ruso, Союз Советских Социалистических Республик, Acerca de este sonido pronunciación, Soyuz Soviétskij Sotsialistícheskij Respúblik; abreviado como СССР, SSSR), fue un Estado federal de repúblicas socialistas que existió del 30 de diciembre de 1922 al 25 de diciembre de 1991 en Eurasia.12​\n");
-        txtInfo.setToolTipText("");
-        txtInfo.setWrapStyleWord(true);
-
-        txtPublAt.setBackground(new java.awt.Color(89, 89, 89));
-        txtPublAt.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 16)); // NOI18N
-        txtPublAt.setForeground(new java.awt.Color(114, 114, 114));
-        txtPublAt.setText("26 Agosto 1991");
-
-        txtAuthor.setBackground(new java.awt.Color(89, 89, 89));
-        txtAuthor.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 16)); // NOI18N
-        txtAuthor.setForeground(new java.awt.Color(114, 114, 114));
-        txtAuthor.setText("By Alex Quix");
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        txtTitle.setBackground(new java.awt.Color(255, 255, 255));
-        txtTitle.setColumns(20);
-        txtTitle.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        txtTitle.setForeground(new java.awt.Color(50, 50, 50));
-        txtTitle.setLineWrap(true);
-        txtTitle.setRows(5);
-        txtTitle.setText("Se disuelve el partido comunista Sovietico");
-        txtTitle.setWrapStyleWord(true);
-        txtTitle.setMaximumSize(new java.awt.Dimension(600, 2147483647));
-        txtTitle.setName("title"); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 347, -1, -1));
 
         imgPort.setIcon(new javax.swing.ImageIcon("C:\\Users\\alexq\\Documents\\NetBeansProjects\\News\\src\\main\\java\\SysNews\\UI\\Icons\\stalin.png")); // NOI18N
         imgPort.setMaximumSize(new java.awt.Dimension(600, 600));
@@ -104,57 +75,77 @@ public class NewsInfo extends javax.swing.JPanel {
         imgPort.setLayout(imgPortLayout);
         imgPortLayout.setHorizontalGroup(
             imgPortLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 610, Short.MAX_VALUE)
         );
         imgPortLayout.setVerticalGroup(
             imgPortLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 390, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(txtAuthor)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtPublAt))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtInfo)
-                            .addComponent(imgPort, javax.swing.GroupLayout.DEFAULT_SIZE, 502, Short.MAX_VALUE)
-                            .addComponent(txtTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                .addGap(41, 41, 41))
+        add(imgPort, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 610, 390));
+
+        txtTitle.setBackground(new java.awt.Color(255, 255, 255));
+        txtTitle.setColumns(20);
+        txtTitle.setFont(new java.awt.Font("Segoe UI", 1, 34)); // NOI18N
+        txtTitle.setForeground(new java.awt.Color(50, 50, 50));
+        txtTitle.setLineWrap(true);
+        txtTitle.setRows(5);
+        txtTitle.setText("Se disuelve el partido comunista Sovietico");
+        txtTitle.setWrapStyleWord(true);
+        txtTitle.setMaximumSize(new java.awt.Dimension(600, 2147483647));
+        txtTitle.setName("title"); // NOI18N
+        add(txtTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 610, 91));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtAuthor.setBackground(new java.awt.Color(89, 89, 89));
+        txtAuthor.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 13)); // NOI18N
+        txtAuthor.setForeground(new java.awt.Color(114, 114, 114));
+        txtAuthor.setText("By Alex Quix");
+
+        txtPublAt.setBackground(new java.awt.Color(89, 89, 89));
+        txtPublAt.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 13)); // NOI18N
+        txtPublAt.setForeground(new java.awt.Color(114, 114, 114));
+        txtPublAt.setText("26 Agosto 1991");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(txtAuthor)
+                .addGap(30, 30, 30)
+                .addComponent(txtPublAt))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(txtTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(txtPublAt, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(txtAuthor))
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addComponent(imgPort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(txtInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtAuthor)
+                    .addComponent(txtPublAt)))
         );
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 540, 30));
+
+        txtInfo.setColumns(20);
+        txtInfo.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        txtInfo.setLineWrap(true);
+        txtInfo.setRows(10);
+        txtInfo.setText("La Unión Soviética (en ruso, Советский Союз, Sovietski Soyuz),10​11​ oficialmente Unión de Repúblicas Socialistas Soviéticas (URSS; en ruso, Союз Советских Социалистических Республик, Acerca de este sonido pronunciación, Soyuz Soviétskij Sotsialistícheskij Respúblik; abreviado como СССР, SSSR), fue un Estado federal de repúblicas socialistas que existió del 30 de diciembre de 1922 al 25 de diciembre de 1991 en Eurasia.12​");
+        txtInfo.setToolTipText("");
+        txtInfo.setWrapStyleWord(true);
+        txtInfo.setBorder(null);
+        txtInfo.setName(""); // NOI18N
+        add(txtInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, 610, 200));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private SysNews.UI.Swings.ImageRoundel imgPort;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txtAuthor;
     private javax.swing.JTextArea txtInfo;
     private javax.swing.JLabel txtPublAt;
