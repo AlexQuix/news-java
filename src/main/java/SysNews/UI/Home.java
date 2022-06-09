@@ -85,9 +85,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setBackground(new java.awt.Color(161, 125, 237));
+        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setForeground(new java.awt.Color(161, 125, 237));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Categorías");
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -119,9 +119,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setBackground(new java.awt.Color(161, 125, 237));
+        jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel11.setForeground(new java.awt.Color(161, 125, 237));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Me Gusta");
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -153,9 +153,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setBackground(new java.awt.Color(161, 125, 237));
+        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel12.setForeground(new java.awt.Color(161, 125, 237));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Leer Después");
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -187,9 +187,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setBackground(new java.awt.Color(161, 125, 237));
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setForeground(new java.awt.Color(161, 125, 237));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Sugerencias");
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -212,13 +212,26 @@ public class Home extends javax.swing.JFrame {
         roundedPanel3.add(roundedPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 492, 170, 40));
 
         roundedPanel13.setBackground(new java.awt.Color(161, 125, 237));
+        roundedPanel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                roundedPanel13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                roundedPanel13MouseExited(evt);
+            }
+        });
 
-        jLabel14.setBackground(new java.awt.Color(161, 125, 237));
+        jLabel14.setBackground(new java.awt.Color(255, 255, 255));
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Ayuda");
         jLabel14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel14MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout roundedPanel13Layout = new javax.swing.GroupLayout(roundedPanel13);
         roundedPanel13.setLayout(roundedPanel13Layout);
@@ -247,9 +260,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel13.setBackground(new java.awt.Color(161, 125, 237));
+        jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel13.setForeground(new java.awt.Color(161, 125, 237));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Ajustes");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -272,6 +285,14 @@ public class Home extends javax.swing.JFrame {
         roundedPanel3.add(roundedPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 450, 170, 40));
 
         roundedPanel15.setBackground(new java.awt.Color(161, 125, 237));
+        roundedPanel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                roundedPanel15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                roundedPanel15MouseExited(evt);
+            }
+        });
 
         jLabel9.setBackground(new java.awt.Color(161, 125, 237));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -468,6 +489,30 @@ public class Home extends javax.swing.JFrame {
         jLabel13.setForeground(new Color(161,125,237));
         roundedPanel14.setBackground(new Color(255, 255, 255));
     }//GEN-LAST:event_roundedPanel14MouseExited
+
+    private void jLabel14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel14MouseEntered
+
+    private void roundedPanel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roundedPanel13MouseExited
+        roundedPanel13.setBackground(new Color(161,125,237));
+        jLabel14.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_roundedPanel13MouseExited
+
+    private void roundedPanel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roundedPanel13MouseEntered
+        jLabel14.setForeground(new Color(161,125,237));
+        roundedPanel13.setBackground(new Color(255, 255, 255));
+    }//GEN-LAST:event_roundedPanel13MouseEntered
+
+    private void roundedPanel15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roundedPanel15MouseEntered
+        roundedPanel15.setBackground(new Color(255, 255, 255));
+        jLabel9.setForeground(new Color(161,125,237));
+    }//GEN-LAST:event_roundedPanel15MouseEntered
+
+    private void roundedPanel15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roundedPanel15MouseExited
+        jLabel9.setForeground(new Color(255, 255, 255));
+        roundedPanel15.setBackground(new Color(161,125,237));
+    }//GEN-LAST:event_roundedPanel15MouseExited
                                             
 
     
