@@ -84,6 +84,7 @@ public class NewsInfo extends javax.swing.JPanel {
 
         add(imgPort, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 610, 390));
 
+        txtTitle.setEditable(false);
         txtTitle.setBackground(new java.awt.Color(255, 255, 255));
         txtTitle.setColumns(20);
         txtTitle.setFont(new java.awt.Font("Segoe UI", 1, 34)); // NOI18N
@@ -129,6 +130,7 @@ public class NewsInfo extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 540, 30));
 
+        txtInfo.setEditable(false);
         txtInfo.setColumns(20);
         txtInfo.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         txtInfo.setLineWrap(true);

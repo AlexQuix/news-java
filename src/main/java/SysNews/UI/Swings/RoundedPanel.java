@@ -18,7 +18,7 @@ import java.awt.RenderingHints;
 public class RoundedPanel extends javax.swing.JPanel {
     protected boolean highQuality = true;
     /** Double values for Horizontal and Vertical radius of corner arcs */
-    protected Dimension arcs = new Dimension(20, 20);
+    public Dimension arcs = new Dimension(20, 20);
     /** Distance between shadow border and opaque panel border */
     protected int shadowGap = 0;
     /** The offset of shadow.  */

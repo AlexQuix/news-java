@@ -18,10 +18,18 @@ public class ImageRoundel extends JComponent {
 
     private Icon icon;
     private int borderSize;
-    
+    private int roundImg = 50;
     
     public ImageRoundel() {
         initComponents();
+    }
+
+    public int getRoundImg() {
+        return roundImg;
+    }
+
+    public void setRoundImg(int roundImg) {
+        this.roundImg = roundImg;
     }
 
     @Override
@@ -35,7 +43,7 @@ public class ImageRoundel extends JComponent {
             Graphics2D g2_img = img.createGraphics();
             g2_img.setRenderingHint(RenderingHints.KEY_ANTIALIASING, 
                     RenderingHints.VALUE_ANTIALIAS_ON);
-            g2_img.fillRoundRect(0, 0, width, height, 50, 50);
+            g2_img.fillRoundRect(0, 0, width, height, roundImg, roundImg);
             
             Composite composite = g2_img.getComposite();
             g2_img.setComposite(AlphaComposite.SrcIn);

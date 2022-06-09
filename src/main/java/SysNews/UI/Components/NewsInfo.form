@@ -67,6 +67,7 @@
     </Container>
     <Component class="javax.swing.JTextArea" name="txtTitle">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
@@ -160,6 +161,7 @@
     </Container>
     <Component class="javax.swing.JTextArea" name="txtInfo">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="columns" type="int" value="20"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="20" style="0"/>
