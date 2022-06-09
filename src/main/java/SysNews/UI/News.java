@@ -4,7 +4,7 @@
  */
 package SysNews.UI;
 
-import Sys.Swing.ScrollBar.ScrollBarCustom;
+import SysNews.UI.Swing.ScrollBar.ScrollBarCustom;
 import SysNews.BL.NewsBL;
 import java.awt.Color;
 import java.awt.Dimension;

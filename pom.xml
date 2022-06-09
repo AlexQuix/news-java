@@ -17,11 +17,6 @@
             <version>2.9.0</version>
         </dependency>
         <dependency>
-            <groupId>Sys</groupId>
-            <artifactId>Dashboard</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>AbsoluteLayout</artifactId>
             <version>RELEASE130</version>
